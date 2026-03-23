@@ -242,13 +242,13 @@ export default function Index() {
               }}
             >
               <h1 className="text-4xl font-bold text-white md:text-6xl font-heading">
-                Nebula Ventures{" "}
-                <span role="img" aria-label="rocket">
-                  🚀
+                Ядерные технологии{" "}
+                <span role="img" aria-label="atom">
+                  ⚛️
                 </span>
               </h1>
               <p className="mt-4 text-lg text-gray-300 md:text-xl px-4 max-w-xs mx-auto md:max-w-none">
-                Экспертиза в области ИИ и технологий
+                Наука на службе жизни — медицина, сельское хозяйство, промышленность
               </p>
               <Button
                 onClick={scrollToAbout}
@@ -299,16 +299,13 @@ export default function Index() {
                 <h2 className="text-3xl font-bold font-heading">О нас</h2>
                 <div className="space-y-4 max-w-2xl">
                   <p className="text-gray-300">
-                    Мы помогаем компаниям использовать передовые технологии, чтобы радовать клиентов
-                    и оптимизировать бизнес-процессы.
+                    Мы занимаемся применением ядерных технологий в мирных целях — там, где они реально помогают людям: в медицине, сельском хозяйстве и промышленности.
                   </p>
                   <p className="text-gray-300">
-                    Стратегическое планирование, техническое лидерство или практическая поддержка разработки —
-                    мы поможем создать правильные решения для вашего бизнеса.
+                    Радиация — это не только опасность. В умелых руках это инструмент, который спасает жизни, защищает урожай и обеспечивает надёжность сложных конструкций.
                   </p>
                   <p className="text-gray-300">
-                    Наша команда имеет более 10 лет опыта создания сложных технических продуктов
-                    для стартапов и крупных компаний. Свяжитесь с нами или попробуйте ИИ-ассистента.
+                    Ядерная физика работает каждый день вокруг нас — от ПЭТ-сканеров в больницах до контроля качества сварных швов на мостах. Узнайте больше или задайте вопрос нашему ИИ-ассистенту.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center md:justify-start">
@@ -347,7 +344,7 @@ export default function Index() {
               isServicesTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            Услуги
+            Направления
           </h2>
           <div
             ref={servicesContentRef}
@@ -360,43 +357,41 @@ export default function Index() {
               {/* Fractional CPO */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <Users className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">CPO / CTO на аутсорсе</h3>
+                  <Icon name="HeartPulse" size={28} className="text-white mr-4" />
+                  <h3 className="text-xl font-semibold font-heading">Медицина</h3>
                 </div>
                 <p className="text-gray-300">
-                  Продуктовое лидерство, выстраивание процессов, развитие команды, технологическая стратегия.
+                  Диагностика и лечение рака с помощью ПЭТ-томографии. Радиоактивные вещества «подсвечивают» опухоли на ранних стадиях, не повреждая здоровые ткани. Стерилизация медицинских инструментов и имплантов.
                 </p>
               </div>
 
-              {/* Product Consulting */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <LineChart className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Продуктовый консалтинг</h3>
+                  <Icon name="Sprout" size={28} className="text-white mr-4" />
+                  <h3 className="text-xl font-semibold font-heading">Сельское хозяйство</h3>
                 </div>
                 <p className="text-gray-300">
-                  Разработка роадмапа, поиск и валидация product-market fit, оценка кандидатов.
+                  Стерилизация насекомых-вредителей для защиты урожая. Продление срока хранения продуктов без изменения вкуса и пользы. Радиоактивные метки помогают изучать рост растений и повышать эффективность агрокультур.
                 </p>
               </div>
 
-              {/* Interim Leadership */}
               <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
                 <div className="flex items-center mb-4">
-                  <Clock className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Временное руководство</h3>
-                </div>
-                <p className="text-gray-300">Временный CPO или VP of Product для компаний в период трансформации.</p>
-              </div>
-
-              {/* Workshops & Advisory */}
-              <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
-                <div className="flex items-center mb-4">
-                  <Lightbulb className="h-7 w-7 text-white mr-4" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold font-heading">Разработка продуктов</h3>
+                  <Icon name="Factory" size={28} className="text-white mr-4" />
+                  <h3 className="text-xl font-semibold font-heading">Промышленность</h3>
                 </div>
                 <p className="text-gray-300">
-                  Быстрое прототипирование и запуск внутренних и внешних приложений и сайтов
-                  с использованием современных инструментов.
+                  Контроль качества сварных швов на трубах, мостах и в авиации — обнаружение скрытых трещин. Управление толщиной материалов на заводах и производство химических веществ для удобрений.
+                </p>
+              </div>
+
+              <div className="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700">
+                <div className="flex items-center mb-4">
+                  <Icon name="Atom" size={28} className="text-white mr-4" />
+                  <h3 className="text-xl font-semibold font-heading">Ядерная физика</h3>
+                </div>
+                <p className="text-gray-300">
+                  Ядерные технологии — это не только атомные станции. Это десятки прикладных решений, которые делают жизнь безопаснее, продукты доступнее, а производство надёжнее.
                 </p>
               </div>
             </div>
@@ -413,7 +408,7 @@ export default function Index() {
               isHeadingVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            Давайте создавать
+            Свяжитесь с нами
           </h2>
           <ContactForm />
         </div>
